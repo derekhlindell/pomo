@@ -41,12 +41,12 @@ def main():
 
     # event loop
     while True:
+        print(f"Starting iteration {current_clock['current_iteration']} of {current_clock['type']}")
+
         while current_clock['current_time'] < current_clock['length']:
             current_clock['current_time'] = tick_clock(current_clock['current_time'])
             print(f"{current_clock['type']}: {current_clock['current_time']}")
 
-        # if last clock is focus, switch to short or long
-        # if 4 short breaks have happened, start long
         if current_clock["type"] == "focus":
             current_clock['current_time'] = 0
             if current_clock["current_iteration"] < current_clock["iteration_per_cycle"]:
@@ -63,7 +63,5 @@ def main():
             current_clock = clock["focus"]
         else:
             print(f"current clock is invalid: {current_clock}")
-
-        print(f"Starting iteration {current_clock['current_iteration']} of {current_clock['type']}")
 
 main()
