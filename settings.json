@@ -1,0 +1,23 @@
+{
+  "focus": {
+    "type": "focus",
+    "length": 2,
+    "iteration_per_cycle": 4,
+    "current_iteration": 1,
+    "current_time": 0
+  },
+  "short_break": {
+    "type": "short_break",
+    "length": 1,
+    "iteration_per_cycle": 2,
+    "current_iteration": 1,
+    "current_time": 0
+  },
+  "long_break": {
+    "type": "long_break",
+    "length": 3,
+    "iteration_per_cycle": 1,
+    "current_iteration": 1,
+    "current_time": 0
+  }
+}
